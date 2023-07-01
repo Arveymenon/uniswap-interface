@@ -889,7 +889,7 @@ function AddLiquidity() {
                               feeAmount={feeAmount}
                               ticksAtLimit={ticksAtLimit}
                             />
-                            <PresetsButtons onSetFullRange={handleSetFullRange} />
+                            {!noLiquidity && <PresetsButtons onSetFullRange={handleSetFullRange} />}
                           </AutoColumn>
                         </StackedItem>
                       </StackedContainer>
